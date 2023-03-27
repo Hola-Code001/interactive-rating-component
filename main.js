@@ -14,7 +14,7 @@ for(var i = 0; i < ratingBtn; i++){
 
 
 submitBtn.addEventListener('click', () => {
-  if(selected.innerHTML == boolean('')){
+  if(selected.innerHTML == Boolean('')){
      submitBtn.innerHTML = 'ops you forget to rate';
   } else {
   ratingPage.style.display = 'none';
