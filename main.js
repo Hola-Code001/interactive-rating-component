@@ -8,15 +8,18 @@ for(var i = 0; i < ratingBtn; i++){
   document.querySelectorAll('.rating-btn')[i].addEventListener('click', function(){
     var buttonHtml = this.innerHTML;
     selected.innerHTML = buttonHtml;
-    
+    submitBtn.innerHTML = 'submit';
   })
-}
+};
 
 
 submitBtn.addEventListener('click', () => {
+  if(selected.innerHTML == boolean('')){
+     submitBtn.innerHTML = 'ops you forget to rate';
+  } else {
   ratingPage.style.display = 'none';
   thanksPage.style.display = 'flex';
-  
-})
+  };
+});
 
 
